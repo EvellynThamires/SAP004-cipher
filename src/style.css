@@ -1,0 +1,15 @@
+body {
+    width: 100vw;
+    height: 100vh;  
+}
+
+h1{
+    text-align: center;
+    color: navy;
+    font-size: 20px;
+}
+
+.hide{
+    display: none;
+}
+

@@ -3,12 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Cifra de Cesar</h1>
     </div>
+    <main>
+        <div class="initial">
+          <button id="cifrar">Cifrar</button>
+          <button id="decifrar">Decifrar</button>
+        </div>
+
+        <div class="cifra hide">
+          <form id="form-cifra">
+            <label for="mensagem"></label>
+            <textarea name="Mensagem" id="mensagem" cols="50" rows="10" placeholder="Coloque sua mensagem aqui" required></textarea>
+
+            <label for="deslocamento" id="deslocamento"></label>
+            <input name="deslocamento" type="text" placeholder="Digite o deslocamento" required> 
+
+            <button id="resultado">Resultado</button>
+
+            <label for="mensagem-cifrada" id="mensagem-cifrada"></label>
+            <textarea name="Resultado" id="resultado-mensagem" cols="50" rows="10"></textarea>
+
+          </form>
+        </div>
+        <div class="decifra hide"> </div>
+    </main>
+    
+    
     <script src="index.js" type="module"></script>
   </body>
 </html>
