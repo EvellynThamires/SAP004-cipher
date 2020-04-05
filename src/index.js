@@ -1,11 +1,13 @@
 import cipher from './cipher.js'; //Importando o cipher.
 
-// //Cifrar
+//Cifrar
 let botaoCifrar = document.querySelector("#cifrar");
 
 botaoCifrar.addEventListener("click", function () {
     let divCifra = document.querySelector(".cifra");
+    let divDecifra = document.querySelector(".decifra");
     divCifra.classList.remove("hide");
+    divDecifra.classList.add("hide");
 })
 
 let resultado = document.querySelector("#resultadoEncode");
@@ -28,7 +30,9 @@ let botaoDecifrar = document.querySelector("#decifrar");
 
 botaoDecifrar.addEventListener("click", function () {
     let divDecifra = document.querySelector(".decifra");
+    let divCifra = document.querySelector(".cifra");
     divDecifra.classList.remove("hide");
+    divCifra.classList.add("hide");
 })
 
 let resultadoDecifra = document.querySelector("#resultadoDecode");
