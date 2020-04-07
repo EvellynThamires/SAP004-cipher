@@ -3,6 +3,30 @@ body {
     height: 100vh;  
 }
 
+.menu{
+    background-color: #4F4F4F;
+    width: 30vw;
+    height: 100vh;
+}
+
+.letter{
+    font-family: 'Lobster', cursive;
+    color: black;
+    font-size: 50px;
+    position: fixed;
+    top: 35%;
+    left: 10%;
+}
+
+.image{
+    text-align: center;
+    width: 100px;
+    position: fixed;
+    top: 45px;
+    left: 280px;
+    transform: rotate(50deg);
+}
+
 h1{
     text-align: center;
     color: navy;
@@ -13,3 +37,17 @@ h1{
     display: none;
 }
 
+.initial{
+    text-align: center;
+}
+
+#cifrar{
+    position: absolute;
+    top: 50%;
+}
+
+#decifrar{
+    position: absolute;
+    top: 50%;
+    right: 40%;
+}

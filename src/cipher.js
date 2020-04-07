@@ -17,7 +17,5 @@ const cipher = {
         }
         return decript
     }   
-
-
 }  
 export default cipher; //Exportando a função cipher

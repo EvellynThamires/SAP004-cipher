@@ -6,47 +6,58 @@
   <title>Caesar Cipher</title>
   <link rel="stylesheet" href="reset.css" />
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div id="root">
-    <h1>Cifra de Cesar</h1>
-  </div>
   <main>
-    <div class="initial">
-      <button id="cifrar">Cifrar</button>
-      <button id="decifrar">Decifrar</button>
+    <div class="menu">
+      <h1 class="letter">Explore</h1>
+    </div>
+    <div>
+      <img class="image" src="./image/joystick.png" alt="joystick">
     </div>
 
-    <div class="cifra hide">
-      <form id="form-cifra">
-        <label for="mensagem"></label>
-        <textarea name="MensagemEncode" id="mensagemEncode" cols="50" rows="10" placeholder="Coloque sua mensagem aqui para cifrar" required></textarea>
 
-        <label for="deslocamento" id="deslocamentoEncode"></label><br>
-        <input name="deslocamentoEncode" type="number" placeholder="Digite o deslocamento" required>
+    <div class="content">
+      <div class="initial">
+        <button id="cifrar">Cifrar</button>
+        <button id="decifrar">Decifrar</button>
+      </div>
 
-        <button id="resultadoEncode">Resultado</button>
+      <div class="cifra hide">
+        <form id="form-cifra">
+          <label for="mensagem"></label>
+          <textarea name="MensagemEncode" id="mensagemEncode" cols="50" rows="10"
+            placeholder="Coloque sua mensagem aqui para cifrar" required></textarea>
 
-        <label for="mensagem-cifrada" id="mensagemCifrada"></label><br>
-        <textarea name="Resultado" id="resultadoMensagemCifrada" cols="50" rows="10" disabled></textarea>
+          <label for="deslocamento" id="deslocamentoEncode"></label><br>
+          <input name="deslocamentoEncode" type="number" placeholder="Digite o deslocamento" required>
 
-      </form>
+          <button id="resultadoEncode">Resultado</button>
+
+          <label for="mensagem-cifrada" id="mensagemCifrada"></label><br>
+          <textarea name="Resultado" id="resultadoMensagemCifrada" cols="50" rows="10" disabled></textarea>
+
+        </form>
+      </div>
+      <div class="decifra hide">
+        <form id="form-decifra">
+          <label for="mensagem"></label>
+          <textarea name="MensagemDecode" id="mensagem-decode" cols="50" rows="10"
+            placeholder="Coloque sua mensagem aqui para decifrar" required></textarea>
+
+          <label for="deslocamento" id="deslocamentoDecode"></label><br>
+          <input name="deslocamentoDecode" type="number" placeholder="Digite o deslocamento" required>
+
+          <button id="resultadoDecode">Resultado</button>
+
+          <label for="mensagemDecode" id="mensagemDecode"></label><br>
+          <textarea name="ResultadoDecode" id="resultadoMensagemDecode" cols="50" rows="10" disabled></textarea>
+        </form>
+      </div>
     </div>
-    <div class="decifra hide">
-      <form id="form-decifra">
-        <label for="mensagem"></label>
-        <textarea name="MensagemDecode" id="mensagemEncode" cols="50" rows="10" placeholder="Coloque sua mensagem aqui para decifrar" required></textarea>
 
-        <label for="deslocamento" id="deslocamentoDecode"></label><br>
-        <input name="deslocamentoDecode" type="number" placeholder="Digite o deslocamento" required>
-
-        <button id="resultadoDecode">Resultado</button>
-
-        <label for="mensagemDecode" id="mensagemDecode"></label><br>
-        <textarea name="ResultadoDecode" id="resultadoMensagemDecode" cols="50" rows="10" disabled></textarea>
-      </form>
-    </div> 
   </main>
 
 
