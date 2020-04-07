@@ -41,7 +41,7 @@ resultadoDecifra.addEventListener("click", function (event) {
     event.preventDefault();
     let form = document.querySelector("#form-decifra");
 
-    let mensagem = form.mensagemEncode.value.split("")
+    let mensagem = form.mensagemDecifrada.value.split("")
     let deslocamento = form.deslocamentoDecode.value
 
     let msgDecript = cipher.decode(mensagem, deslocamento)

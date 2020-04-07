@@ -27,12 +27,6 @@ body {
     transform: rotate(50deg);
 }
 
-h1{
-    text-align: center;
-    color: navy;
-    font-size: 20px;
-}
-
 .hide{
     display: none;
 }
@@ -43,11 +37,27 @@ h1{
 
 #cifrar{
     position: absolute;
-    top: 50%;
+    top: 30%;
+    right: 40%;
 }
 
 #decifrar{
     position: absolute;
-    top: 50%;
-    right: 40%;
+    top: 30%;
+    right: 33%;
 }
+
+.cifra{
+    position: absolute;
+    top: 40%;
+    right: 25%;
+}
+
+.decifra{
+    position: absolute;
+    top: 40%;
+    right: 25%;
+}
+
+
+
