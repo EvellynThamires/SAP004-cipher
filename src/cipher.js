@@ -1,5 +1,8 @@
 const cipher = {
-    encode: function(mensagem, deslocamento){
+    encode: function(deslocamento, mensagem){
+        if (!deslocamento || !mensagem)
+        throw new TypeError("Parametros não conferem");
+        else{
         let cript = ""
         for (let i = 0; i < mensagem.length; i++) {
             let letra = mensagem[i].toUpperCase().charCodeAt(0)
@@ -7,8 +10,9 @@ const cipher = {
             cript += String.fromCharCode(letraASC)
         }
         return cript;
-    },
-    decode: function(mensagem, deslocamento){
+    }
+},
+    decode: function(deslocamento, mensagem){
         let decript = ""
         for (let i = 0; i < mensagem.length; i++) {
             let letra = mensagem[i].charCodeAt(0)

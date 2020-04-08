@@ -19,7 +19,7 @@ resultado.addEventListener("click", function (event) {
     let mensagem = form.mensagemEncode.value.split("")
     let deslocamento = form.deslocamentoEncode.value
 
-    let msgCripto = cipher.encode(mensagem, deslocamento)
+    let msgCripto = cipher.encode(deslocamento, mensagem)
 
     let resultadoMensagem = document.querySelector("#resultadoMensagemCifrada")
     resultadoMensagem.textContent = msgCripto
@@ -44,7 +44,7 @@ resultadoDecifra.addEventListener("click", function (event) {
     let mensagem = form.mensagemDecifrada.value.split("")
     let deslocamento = form.deslocamentoDecode.value
 
-    let msgDecript = cipher.decode(mensagem, deslocamento)
+    let msgDecript = cipher.decode(deslocamento, mensagem)
 
     let resultadoMensagem = document.querySelector("#resultadoMensagemDecode")
     resultadoMensagem.textContent = msgDecript

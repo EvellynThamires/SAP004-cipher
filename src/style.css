@@ -11,11 +11,11 @@ body {
 
 .letter{
     font-family: 'Lobster', cursive;
-    color: black;
-    font-size: 50px;
+    color: snow;
+    font-size: 90px;
     position: fixed;
     top: 35%;
-    left: 10%;
+    left: 6%;
 }
 
 .image{
@@ -44,8 +44,29 @@ body {
 #decifrar{
     position: absolute;
     top: 30%;
-    right: 33%;
+    right: 25%;
 }
+
+.corInput{
+    background-color: #dc3545;
+    color: snow;
+    font-size: 25px;
+    border: 3px double #FFC0CB;
+    border-radius: 5px;
+    font-family: 'Baloo Paaji 2', cursive;
+    padding: 6px 12px;
+}
+
+.corInput:hover{
+    background-color: #c82333;
+    transition: 1s;
+}
+
+.corInput:active{
+    background-color: #00FFFF;
+    border-radius: 30px;
+}
+
 
 .cifra{
     position: absolute;
