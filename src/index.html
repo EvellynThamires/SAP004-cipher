@@ -8,55 +8,63 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@600&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
   <main>
     <div class="menu">
-      <h1 class="letter">Explore</h1>
+      <h1 class="world">World</h1>
+      <h1 class="of">of</h1>
+      <h1 class="games">Games</h1>
     </div>
     <div>
       <img class="image" src="./image/joystick.png" alt="joystick">
     </div>
-
-
     <div class="content">
       <div class="initial">
+        <h1 class="title">Bem vindo, gamer!</h1>
+        <h2 class="firstText">Se você precisa enviar uma mensagem sobre sua estratégia para um aliado, mas não gostaria que seu inimigo soubesse, este é o lugar perfeito para você!</h2>
+        <h2 class="secondText">Cifre ou decifre, é só fazer sua escolha.</h2>
+        <h2 class="thirdText">Vamos dividir e conquistar!</h2>
         <button id="cifrar" class="corInput">Cifrar</button>
         <button id="decifrar" class="corInput">Decifrar</button>
       </div>
 
       <div class="cifra hide">
         <form id="form-cifra">
-          
-          <label for="mensagem"></label>
+
+          <label for="mensagem" class="required"></label>
           <textarea name="MensagemEncode" id="mensagemEncode" cols="50" rows="10" placeholder="Coloque sua mensagem aqui para cifrar" required></textarea>
 
-          <label for="deslocamento" id="deslocamentoEncode"></label><br>
-          <input name="deslocamentoEncode" type="number" placeholder="Digite o deslocamento" required>
+          <label for="deslocamento" id="deslocamentoEncode"></label>
+          <input name="deslocamentoEncode" type="number" placeholder="Digite o deslocamento" class="inputStyle" required>
 
           <button id="resultadoEncode">Resultado</button>
 
-          <label for="mensagem-cifrada" id="mensagemCifrada"></label><br>
-          <textarea name="Resultado" id="resultadoMensagemCifrada" cols="50" rows="10" disabled></textarea>
+          <p id="resultadoMensagemCifrada"></p>
+
+          <input type="reset" value="Recomeçar" class="inputLimpar">
 
         </form>
       </div>
       <div class="decifra hide">
         <form id="form-decifra">
-          
+
           <label for="mensagem"></label>
           <textarea name="MensagemDecode" id="mensagemDecifrada" cols="50" rows="10" placeholder="Coloque sua mensagem aqui para decifrar" required></textarea>
 
           <label for="deslocamento" id="deslocamentoDecode"></label><br>
-          <input name="deslocamentoDecode" type="number" placeholder="Digite o deslocamento" required>
+          <input name="deslocamentoDecode" type="number" placeholder="Digite o deslocamento" class="inputStyle" required>
 
           <button id="resultadoDecode">Resultado</button>
 
-          <label for="mensagemDecode" id="mensagemDecode"></label><br>
-          <textarea name="ResultadoDecode" id="resultadoMensagemDecode" cols="50" rows="10" disabled></textarea>
+          <p id="resultadoMensagemDecode"></p>
+
+          <input type="reset" value="Recomeçar" class="inputLimpar">
+        
         </form>
       </div>
     </div>

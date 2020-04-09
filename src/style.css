@@ -9,12 +9,30 @@ body {
     height: 100vh;
 }
 
-.letter{
+.world{
+    font-family: 'Lobster', cursive;
+    color: snow;
+    font-size: 90px;
+    position: fixed;
+    top: 20%;
+    left: 6%;
+}
+
+.of{
     font-family: 'Lobster', cursive;
     color: snow;
     font-size: 90px;
     position: fixed;
     top: 35%;
+    left: 12%;
+}
+
+.games{
+    font-family: 'Lobster', cursive;
+    color: snow;
+    font-size: 90px;
+    position: fixed;
+    top: 50%;
     left: 6%;
 }
 
@@ -22,9 +40,8 @@ body {
     text-align: center;
     width: 100px;
     position: fixed;
-    top: 45px;
-    left: 280px;
-    transform: rotate(50deg);
+    top: 70%;
+    left: 12%;
 }
 
 .hide{
@@ -35,15 +52,52 @@ body {
     text-align: center;
 }
 
+.title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    position: fixed;
+    top: 2%;
+    left: 57%;
+}
+
+.firstText{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    position: fixed;
+    top: 10%;
+    left: 30%;
+}
+
+.secondText{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    position: fixed;
+    top: 18%;
+    left: 55%;
+}
+
+.thirdText{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    position: fixed;
+    top: 23%;
+    left: 58%;
+}
+
+.required:after{
+    content: " * ";
+    color: red;
+}
+
 #cifrar{
     position: absolute;
-    top: 30%;
+    top: 35%;
     right: 40%;
 }
 
 #decifrar{
     position: absolute;
-    top: 30%;
+    top: 35%;
     right: 25%;
 }
 
@@ -51,22 +105,18 @@ body {
     background-color: #dc3545;
     color: snow;
     font-size: 25px;
-    border: 3px double #FFC0CB;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: 'Baloo Paaji 2', cursive;
     padding: 6px 12px;
 }
 
 .corInput:hover{
     background-color: #c82333;
+    border-color: #F08080;  
+    border-width: 2px; 
     transition: 1s;
+    cursor: pointer;
 }
-
-.corInput:active{
-    background-color: #00FFFF;
-    border-radius: 30px;
-}
-
 
 .cifra{
     position: absolute;
@@ -80,5 +130,70 @@ body {
     right: 25%;
 }
 
+#mensagemEncode{
+    resize: none;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+}
 
+.inputStyle{
+    position: fixed;
+    top: 60%;
+    right: 15%;
+}
 
+#resultadoEncode{
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    top: 59%;
+    left: 85%;
+    cursor: pointer;
+}
+
+#resultadoMensagemCifrada{
+    position: fixed;
+    top: 80%;
+    left: 40%;
+}
+
+.inputLimpar{
+    background-color: #dc3545;
+    color: snow;
+    font-size: 14px;
+    border-radius: 10px;
+    font-family: 'Baloo Paaji 2', cursive;
+    padding: 6px 12px;
+    position: fixed;
+    top: 85%;
+    left: 60%;
+}
+
+#mensagemDecifrada{
+    resize: none;
+    position: fixed;
+    top: 50%;
+    left: 40%;
+}
+
+#resultadoDecode{
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 13px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    top: 59%;
+    left: 85%;
+    cursor: pointer;
+}
+
+#resultadoMensagemDecode{
+    position: fixed;
+    top: 80%;
+    left: 40%;
+}
