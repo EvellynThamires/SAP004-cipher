@@ -136,6 +136,7 @@ body {
     position: fixed;
     top: 60%;
     right: 15%;
+    width: 130px;
 }
 
 #resultadoEncode{

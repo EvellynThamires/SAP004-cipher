@@ -19,7 +19,7 @@ resultado.addEventListener("click", function (event) {
     let mensagem = form.mensagemEncode.value.split("")
     let deslocamento = form.deslocamentoEncode.value
 
-    if(mensagem == "" || deslocamento == ""){
+    if (mensagem == "" || deslocamento == "") {
         alert("Preencha o campo!")
         return
     }
@@ -49,7 +49,7 @@ resultadoDecifra.addEventListener("click", function (event) {
     let mensagem = form.mensagemDecifrada.value.split("")
     let deslocamento = form.deslocamentoDecode.value
 
-    if(mensagem == "" || deslocamento == ""){
+    if (mensagem == "" || deslocamento == "") {
         alert("Preencha o campo!")
         return
     }
@@ -64,13 +64,13 @@ resultadoDecifra.addEventListener("click", function (event) {
 
 let resetar = document.querySelector("#limpar")
 
-resetar.addEventListener("click", function(){
+resetar.addEventListener("click", function () {
     document.querySelector("#resultadoMensagemCifrada").innerHTML = ""
 })
 
 let reset = document.querySelector("#clean")
 
-reset.addEventListener("click", function(){
+reset.addEventListener("click", function () {
     document.querySelector("#resultadoMensagemDecode").innerHTML = ""
 })
 
