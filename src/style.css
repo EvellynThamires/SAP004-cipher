@@ -84,11 +84,6 @@ body {
     left: 58%;
 }
 
-.required:after{
-    content: " * ";
-    color: red;
-}
-
 #cifrar{
     position: absolute;
     top: 35%;
@@ -171,6 +166,7 @@ body {
     position: fixed;
     top: 85%;
     left: 60%;
+    cursor: pointer;
 }
 
 #mensagemDecifrada{
@@ -197,3 +193,4 @@ body {
     top: 80%;
     left: 40%;
 }
+
